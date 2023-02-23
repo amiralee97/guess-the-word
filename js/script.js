@@ -25,7 +25,7 @@ getWord();
 
 
 
-// placeholder symobols before any letters are guessed //
+
 const placeholder = function (word) {
     const placeholderLetter = [];
     for (const letter of word) {
@@ -39,7 +39,7 @@ placeholder(word);
 
 button.addEventListener("click", function (e) {
     e.preventDefault();
-    message.innerText = "";  //empties message paragraph
+    message.innerText = "";  
     const guess = letterInput.value;
     const goodGuess = playerInput(guess);
 
